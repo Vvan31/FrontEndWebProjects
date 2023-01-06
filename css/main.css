@@ -8,6 +8,37 @@ main {
   height: 100vh;
   background: linear-gradient(rgb(247, 247, 248), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80") no-repeat center/cover;
 }
+main nav {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  float: right;
+}
+@media screen and (max-width: 700px) {
+  main nav ul {
+    display: none;
+  }
+  main nav .hamburger,
+  main nav .cart,
+  main nav .search {
+    width: 10%;
+  }
+  main nav .hamburger {
+    display: inline-block;
+  }
+}
+main nav a {
+  font-size: 0.7em;
+  color: rgb(13, 13, 37);
+  text-decoration: none;
+}
+main nav ul {
+  list-style: none;
+}
+main nav li {
+  display: inline;
+  padding: 0.4em;
+}
 main h3 {
   font-family: "Playfair Display", serif;
   color: rgb(255, 136, 0);
@@ -22,14 +53,14 @@ main #welcome {
 }
 main #welcome h1 {
   font-family: "Playfair Display", serif;
-  align-items: center;
-  justify-items: center;
+  text-align: center;
+  margin-right: 25%;
   grid-column: 2;
   grid-row: 2;
   min-width: 300px;
 }
 main #welcome form {
-  margin-top: 1em;
+  margin-top: 2em;
   grid-column: 2;
   grid-row: 3;
   margin-left: 3%;
@@ -86,6 +117,11 @@ main #welcome form select {
 
 #menu {
   height: 100vh;
+}
+#menu h3 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: xx-large;
 }
 #menu .gallery {
   display: grid;

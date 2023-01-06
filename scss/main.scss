@@ -22,9 +22,48 @@ body{
     border-radius: 5px;
     margin-left: -5px;
 }
+
+@mixin font_style {
+    font-family:$font-playFair;
+    text-align:center;
+}
+
 main{
     height: 100vh;
     background: linear-gradient($color-grey, rgba(0, 0, 0, 0.1)),url("https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80") no-repeat center/cover;
+    nav{
+        position:absolute;
+        top: 2%;
+        right: 2%;
+        float:right;
+        @media screen and (max-width: 700px) {
+            ul{
+                display: none;
+            }
+            .hamburger,
+            .cart,
+            .search {
+                width: 10%;
+            }
+            .hamburger {
+                display: inline-block;
+            }
+        }
+
+        a{
+            font-size: 0.7em;
+            color: $color-text;
+            text-decoration: none;
+        }
+
+        ul{
+            list-style: none;
+        }
+        li{
+            display: inline;
+            padding: 0.4em;
+        }
+    }
     h3{
         font-family:$font-playFair;
         color: $color-main;
@@ -37,15 +76,14 @@ main{
         grid-template-columns: 30% 1fr 10%;
         grid-template-rows: repeat(5, 20%);
         h1{
-            font-family:$font-playFair;
-            align-items: center;
-            justify-items: center;
+            @include font_style();
+            margin-right: 25%;
             grid-column: 2;
             grid-row: 2;
             min-width: 300px;
         }
         form{
-            margin-top: 1em;
+            margin-top: 2em;
             grid-column: 2;
             grid-row: 3;
             margin-left: 3%;
@@ -62,7 +100,6 @@ main{
                 @include button_style();
             }
         }
-        
     }
 }
 
@@ -103,6 +140,10 @@ main{
 
 #menu{
     height: 100vh;
+    h3{
+        @include font_style;
+        font-size: xx-large;
+    }
 
     .gallery{
         display: grid;
