@@ -1,0 +1,144 @@
+$color-text: rgb(13, 13, 37);
+$color-main: rgb(255, 136, 0);
+$color-accent: rgb(255, 170, 77);
+$color-star: rgb(255, 196, 21);
+$color-grey: rgb(247, 247, 248);
+
+$font-lato: "Lato", sans-serif;
+$font-playFair: "Playfair Display", serif;
+
+body{
+    font-size: 1.5rem;
+    font-family: $font-lato;
+    color: $color-text;
+}
+
+@mixin button_style {
+    height: 40px;
+    border: none;
+    min-width: 50px;
+    background: $color-main;
+    color:$color-grey;
+    border-radius: 5px;
+    margin-left: -5px;
+}
+main{
+    height: 100vh;
+    background: linear-gradient($color-grey, rgba(0, 0, 0, 0.1)),url("https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80") no-repeat center/cover;
+    h3{
+        font-family:$font-playFair;
+        color: $color-main;
+    }
+    #welcome{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 30% 1fr 10%;
+        grid-template-rows: repeat(5, 20%);
+        h1{
+            font-family:$font-playFair;
+            align-items: center;
+            justify-items: center;
+            grid-column: 2;
+            grid-row: 2;
+            min-width: 300px;
+        }
+        form{
+            margin-top: 1em;
+            grid-column: 2;
+            grid-row: 3;
+            margin-left: 3%;
+            input{
+                height: 40px;
+                border: none;
+                padding-left: 3%;
+                width: 50%;
+                min-width: 150px;
+                border-radius: 5px;
+            }
+
+            select{
+                @include button_style();
+            }
+        }
+        
+    }
+}
+
+#story{
+    height: 100vh;
+    background-image: url(https://cuisinebo.vercel.app/images/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 350px;
+    padding-left: 40%;
+    padding-right: 10%;
+    text-align: justify;
+
+    h2{
+        color: $color-main;
+        font-size: 1.5rem;
+    }
+    h3{
+        font-family:$font-playFair;
+        color: $color-text;
+        font-size: 2em;
+    }
+    p{
+        font-size:large;
+    }
+    button{
+        @include button_style();
+    }
+}
+
+@mixin menu_option($url_img) {
+    background-image: $url_img;
+    margin: 5%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu{
+    height: 100vh;
+
+    .gallery{
+        display: grid;
+        // If screen is smaller than 700px
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .img01{
+            @include menu_option(url(https://source.unsplash.com/fdlZBWIP0aM));
+        }
+        .img02{
+            @include menu_option(url(https://source.unsplash.com/Zyx6a0ReB18));
+        }
+        .img03{
+            @include menu_option(url(https://source.unsplash.com/WbA_PCv3_Co));
+        }
+        .img04{
+            @include menu_option(url(https://source.unsplash.com/SH6vc3VOOwE));
+        }
+        .img05{
+            @include menu_option(url(https://source.unsplash.com/ohnRXPYXDEE));
+        }
+        .img06{
+            @include menu_option(url(https://source.unsplash.com/j3gz0KReZbA));
+        }
+        .img07{
+            @include menu_option(url(https://source.unsplash.com/FFqNATH27EM));
+        }
+        .img08{
+            @include menu_option(url(https://source.unsplash.com/RwoKbjJdYvE));
+        }
+
+    }
+}
+#booking{
+    height: 100vh;
+}

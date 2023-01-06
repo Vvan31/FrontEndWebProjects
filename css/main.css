@@ -1,0 +1,160 @@
+body {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(13, 13, 37);
+}
+
+main {
+  height: 100vh;
+  background: linear-gradient(rgb(247, 247, 248), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80") no-repeat center/cover;
+}
+main h3 {
+  font-family: "Playfair Display", serif;
+  color: rgb(255, 136, 0);
+}
+main #welcome {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 30% 1fr 10%;
+  grid-template-rows: repeat(5, 20%);
+}
+main #welcome h1 {
+  font-family: "Playfair Display", serif;
+  align-items: center;
+  justify-items: center;
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 300px;
+}
+main #welcome form {
+  margin-top: 1em;
+  grid-column: 2;
+  grid-row: 3;
+  margin-left: 3%;
+}
+main #welcome form input {
+  height: 40px;
+  border: none;
+  padding-left: 3%;
+  width: 50%;
+  min-width: 150px;
+  border-radius: 5px;
+}
+main #welcome form select {
+  height: 40px;
+  border: none;
+  min-width: 50px;
+  background: rgb(255, 136, 0);
+  color: rgb(247, 247, 248);
+  border-radius: 5px;
+  margin-left: -5px;
+}
+
+#story {
+  height: 100vh;
+  background-image: url(https://cuisinebo.vercel.app/images/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 350px;
+  padding-left: 40%;
+  padding-right: 10%;
+  text-align: justify;
+}
+#story h2 {
+  color: rgb(255, 136, 0);
+  font-size: 1.5rem;
+}
+#story h3 {
+  font-family: "Playfair Display", serif;
+  color: rgb(13, 13, 37);
+  font-size: 2em;
+}
+#story p {
+  font-size: large;
+}
+#story button {
+  height: 40px;
+  border: none;
+  min-width: 50px;
+  background: rgb(255, 136, 0);
+  color: rgb(247, 247, 248);
+  border-radius: 5px;
+  margin-left: -5px;
+}
+
+#menu {
+  height: 100vh;
+}
+#menu .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 700px) {
+  #menu .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#menu .gallery .img01 {
+  background-image: url(https://source.unsplash.com/fdlZBWIP0aM);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .gallery .img02 {
+  background-image: url(https://source.unsplash.com/Zyx6a0ReB18);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .gallery .img03 {
+  background-image: url(https://source.unsplash.com/WbA_PCv3_Co);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .gallery .img04 {
+  background-image: url(https://source.unsplash.com/SH6vc3VOOwE);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .gallery .img05 {
+  background-image: url(https://source.unsplash.com/ohnRXPYXDEE);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .gallery .img06 {
+  background-image: url(https://source.unsplash.com/j3gz0KReZbA);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .gallery .img07 {
+  background-image: url(https://source.unsplash.com/FFqNATH27EM);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu .gallery .img08 {
+  background-image: url(https://source.unsplash.com/RwoKbjJdYvE);
+  margin: 5%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#booking {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */

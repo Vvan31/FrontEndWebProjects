@@ -1,0 +1,23 @@
+{
+  "name": "sass_projects-",
+  "version": "1.0.0",
+  "description": "This are some frontend projects using sass.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss:css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vvan31/Sass_projects-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vvan31/Sass_projects-/issues"
+  },
+  "homepage": "https://github.com/Vvan31/Sass_projects-#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
