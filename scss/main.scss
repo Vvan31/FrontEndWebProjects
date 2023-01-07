@@ -208,6 +208,9 @@ main{
                 align-items: center;
                 flex-flow: wrap;
                 opacity: 0.6;
+                .stars{
+                    color: $color-main;
+                }
             } 
             .img01{
                 @include menu_option(url(https://source.unsplash.com/fdlZBWIP0aM));

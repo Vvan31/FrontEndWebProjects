@@ -187,6 +187,9 @@ main #welcome form select {
   flex-flow: wrap;
   opacity: 0.6;
 }
+#menu .gallery .menu-item .gallery-overlay .stars {
+  color: rgb(255, 136, 0);
+}
 #menu .gallery .menu-item .img01 {
   background-image: url(https://source.unsplash.com/fdlZBWIP0aM);
   margin: 5%;
