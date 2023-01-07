@@ -46,7 +46,7 @@ main{
                 width: 10%;
             }
             .hamburger {
-                display: inline-block;
+                display: felx;
             }
         }
 
@@ -63,8 +63,14 @@ main{
             display: inline;
             padding: 0.4em;
         }
+        .hamburger{
+            display: none;
+        }
     }
-    h3{
+    h3, 
+    .hamburger,
+    .cart,
+    .search {
         font-family:$font-playFair;
         color: $color-main;
     }
@@ -136,13 +142,59 @@ main{
     height: 30vh;
     background-repeat: no-repeat;
     background-size: cover;
+     .gallery-overlay :hover{
+        left: 0;
+    }
+    .gallery-overlay{
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        transition: left 0.7s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 #menu{
-    height: 100vh;
+    height: auto;
+    
     h3{
         @include font_style;
         font-size: xx-large;
+    }
+    a{
+        font-size: 0.5em;
+        color: $color-text;
+        text-decoration:none;
+        border-bottom: 1px solid #000;
+        padding-bottom: 15px;
+        
+    }
+    .firstlink {
+        color: $color-main;
+        border-bottom: 1px solid $color-main;
+    }
+    .dots{
+        color: $color-main;
+        justify-content: center;
+        font-size: 0.9em;
+        li{
+         padding: 0.3em; 
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    li{
+        display: inline;
+        /* padding: 0.3em; */
     }
 
     .gallery{
@@ -181,5 +233,51 @@ main{
     }
 }
 #booking{
-    height: 100vh;
+    height: 130vh;
+    background-color: $color-grey;
+    @include font_style;
+    padding-top: 1em;
+    h2{
+        font-size: small;
+        color: $color-main;
+    }
+    span{
+        font-size: small;
+    }
+    i{
+        border: 1px solid $color-main;
+        color: $color-main;
+        border-radius: 100%;
+        padding: 0.6rem;
+        font-size: 1.5rem;
+    }
+    a{
+        font-family: $font-lato;
+        color: $color-main;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+    .timetable{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1em ;
+        .time{
+            font-size: 0.8em;
+        }
+    }
+    img{
+        height: auto;
+        width: 75%;
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    position: relative;
+    height: 4em;
+    bottom: 0;
+    font-size: small;
+    text-align: center;
+
 }

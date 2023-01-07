@@ -24,7 +24,7 @@ main nav {
     width: 10%;
   }
   main nav .hamburger {
-    display: inline-block;
+    display: felx;
   }
 }
 main nav a {
@@ -39,7 +39,13 @@ main nav li {
   display: inline;
   padding: 0.4em;
 }
-main h3 {
+main nav .hamburger {
+  display: none;
+}
+main h3,
+main .hamburger,
+main .cart,
+main .search {
   font-family: "Playfair Display", serif;
   color: rgb(255, 136, 0);
 }
@@ -116,12 +122,40 @@ main #welcome form select {
 }
 
 #menu {
-  height: 100vh;
+  height: auto;
 }
 #menu h3 {
   font-family: "Playfair Display", serif;
   text-align: center;
   font-size: xx-large;
+}
+#menu a {
+  font-size: 0.5em;
+  color: rgb(13, 13, 37);
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+}
+#menu .firstlink {
+  color: rgb(255, 136, 0);
+  border-bottom: 1px solid rgb(255, 136, 0);
+}
+#menu .dots {
+  color: rgb(255, 136, 0);
+  justify-content: center;
+  font-size: 0.9em;
+}
+#menu .dots li {
+  padding: 0.3em;
+}
+#menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+#menu li {
+  display: inline;
+  /* padding: 0.3em; */
 }
 #menu .gallery {
   display: grid;
@@ -139,12 +173,42 @@ main #welcome form select {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#menu .gallery .img01 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img01 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #menu .gallery .img02 {
   background-image: url(https://source.unsplash.com/Zyx6a0ReB18);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#menu .gallery .img02 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img02 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #menu .gallery .img03 {
   background-image: url(https://source.unsplash.com/WbA_PCv3_Co);
@@ -153,12 +217,42 @@ main #welcome form select {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#menu .gallery .img03 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img03 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #menu .gallery .img04 {
   background-image: url(https://source.unsplash.com/SH6vc3VOOwE);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#menu .gallery .img04 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img04 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #menu .gallery .img05 {
   background-image: url(https://source.unsplash.com/ohnRXPYXDEE);
@@ -167,12 +261,42 @@ main #welcome form select {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#menu .gallery .img05 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img05 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #menu .gallery .img06 {
   background-image: url(https://source.unsplash.com/j3gz0KReZbA);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#menu .gallery .img06 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img06 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #menu .gallery .img07 {
   background-image: url(https://source.unsplash.com/FFqNATH27EM);
@@ -181,6 +305,21 @@ main #welcome form select {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#menu .gallery .img07 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img07 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #menu .gallery .img08 {
   background-image: url(https://source.unsplash.com/RwoKbjJdYvE);
   margin: 5%;
@@ -188,9 +327,71 @@ main #welcome form select {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#menu .gallery .img08 .gallery-overlay :hover {
+  left: 0;
+}
+#menu .gallery .img08 .gallery-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #booking {
-  height: 100vh;
+  height: 130vh;
+  background-color: rgb(247, 247, 248);
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  padding-top: 1em;
+}
+#booking h2 {
+  font-size: small;
+  color: rgb(255, 136, 0);
+}
+#booking span {
+  font-size: small;
+}
+#booking i {
+  border: 1px solid rgb(255, 136, 0);
+  color: rgb(255, 136, 0);
+  border-radius: 100%;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+}
+#booking a {
+  font-family: "Lato", sans-serif;
+  color: rgb(255, 136, 0);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+#booking .timetable {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+#booking .timetable .time {
+  font-size: 0.8em;
+}
+#booking img {
+  height: auto;
+  width: 75%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 4em;
+  bottom: 0;
+  font-size: small;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
