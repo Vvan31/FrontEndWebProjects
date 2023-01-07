@@ -133,7 +133,7 @@ main #welcome form select {
   font-size: 0.5em;
   color: rgb(13, 13, 37);
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(13, 13, 37);
   padding-bottom: 15px;
 }
 #menu .firstlink {
@@ -166,181 +166,82 @@ main #welcome form select {
     grid-template-columns: 1fr 1fr;
   }
 }
-#menu .gallery .img01 {
+#menu .gallery .menu-item {
+  width: 100%;
+}
+#menu .gallery .menu-item section[class^=img0]:hover .gallery-overlay {
+  left: inherit;
+  width: inherit;
+  transition: left 0.7s;
+}
+#menu .gallery .menu-item .gallery-overlay {
+  color: rgb(247, 247, 248);
+  height: inherit;
+  background: rgb(13, 13, 37);
+  position: absolute;
+  left: -100%;
+  transition: left 0.7s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  opacity: 0.6;
+}
+#menu .gallery .menu-item .img01 {
   background-image: url(https://source.unsplash.com/fdlZBWIP0aM);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#menu .gallery .img01 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img01 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#menu .gallery .img02 {
+#menu .gallery .menu-item .img02 {
   background-image: url(https://source.unsplash.com/Zyx6a0ReB18);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#menu .gallery .img02 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img02 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#menu .gallery .img03 {
+#menu .gallery .menu-item .img03 {
   background-image: url(https://source.unsplash.com/WbA_PCv3_Co);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#menu .gallery .img03 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img03 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#menu .gallery .img04 {
+#menu .gallery .menu-item .img04 {
   background-image: url(https://source.unsplash.com/SH6vc3VOOwE);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#menu .gallery .img04 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img04 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#menu .gallery .img05 {
+#menu .gallery .menu-item .img05 {
   background-image: url(https://source.unsplash.com/ohnRXPYXDEE);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#menu .gallery .img05 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img05 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#menu .gallery .img06 {
+#menu .gallery .menu-item .img06 {
   background-image: url(https://source.unsplash.com/j3gz0KReZbA);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#menu .gallery .img06 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img06 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#menu .gallery .img07 {
+#menu .gallery .menu-item .img07 {
   background-image: url(https://source.unsplash.com/FFqNATH27EM);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#menu .gallery .img07 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img07 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#menu .gallery .img08 {
+#menu .gallery .menu-item .img08 {
   background-image: url(https://source.unsplash.com/RwoKbjJdYvE);
   margin: 5%;
   height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
-#menu .gallery .img08 .gallery-overlay :hover {
-  left: 0;
-}
-#menu .gallery .img08 .gallery-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  transition: left 0.7s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 #booking {
